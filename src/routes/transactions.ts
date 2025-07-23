@@ -59,7 +59,6 @@ export async function transactionsRoutes(app: FastifyInstance) {
       return { summary }
     },
   )
-
   app.post('/', async (request, reply) => {
     const createTransactionsBodySchema = z.object({
       title: z.string(),
