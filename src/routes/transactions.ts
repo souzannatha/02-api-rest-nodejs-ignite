@@ -88,3 +88,4 @@ export async function transactionsRoutes(app: FastifyInstance) {
     reply.status(201).send()
   })
 }
+// TODO: ESTOU NA ULTUMA AULA EM 3 MINUTOS.
