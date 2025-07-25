@@ -4,8 +4,6 @@ import { randomUUID } from 'node:crypto'
 import { knex } from '../database'
 import { checkSessionIdExists } from '../middlewares/check-session-id-exist'
 
-// Cookies => Formas da gente manter contexto entre as requisições.
-
 export async function transactionsRoutes(app: FastifyInstance) {
   app.get(
     '/',
@@ -88,4 +86,3 @@ export async function transactionsRoutes(app: FastifyInstance) {
     reply.status(201).send()
   })
 }
-// TODO: ESTOU NA ULTUMA AULA EM 3 MINUTOS.
